@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    margin: 0;
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 300px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+.search-box {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.search-box input::placeholder {
+    color: #ddd;
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.weather-info img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.weather-info h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.weather-info h2 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.extra-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* aligns icons and text vertically */
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.extra-info div {
+    text-align: center;
+}
+
+.extra-info img,
+.extra-info i {
+    width: 35px;  /* make both image and font icons same size */
+    height: 35px;
+    font-size: 35px; /* applies only to font-awesome icons */
+}
